@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 90%;
+}
+
+.square {
+  width: 16px;
+  height: 16px;
+  background: #1d1d1d;
+  margin: 1px;
+  box-shadow: 0 0 2px #000;
+  transition: 2s ease;
+}
+
+.square:hover{
+  transition-duration: 0s;
+}
+
+.btn_container{
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.redBtn , .blueBtn ,.yellowBtn, .greenBtn,
+.purpleBtn , .randomBtn , .eraser{
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+    
+}
+
+.randomBtn{
+  background: linear-gradient(90deg, #a35ffc 0%, #ffee00 100.25%);
+}
+
+.blueBtn{
+  background:#3498db;
+}
+
+.greenBtn{
+  background:#2ecc71;
+}
+
+.redBtn{
+  background:#e74c3c;
+}
+
+.yellowBtn{
+  background:#c6c93e;
+}
+.purpleBtn{
+  background:#8e44ad;
+}
+.eraser{
+  background: #212121;
+}
